@@ -51,7 +51,7 @@ Example service responsibilities:
 ```
 Client → REST Controller → Service → DAO/Repository → Database
 ```
-**Spring Boot-Rest-Curddemo-Employee-with-Spring-Data-JPA**
+**2.Spring Boot-Rest-Curddemo-Employee-with-Spring-Data-JPA**
 ---
 <img width="1380" height="534" alt="image" src="https://github.com/user-attachments/assets/1cd190d0-6c02-4be3-9f78-f693f48eeafe" />
 A simplified and efficient **Employee Directory CRUD REST API** built using **Spring Boot** and **Spring Data JPA**. This version reduces boilerplate code by leveraging Spring Data JPA's built‑in repository functionalities.
@@ -68,5 +68,50 @@ Compared to the traditional DAO approach, this version:
 
 ---
 
-
+**3.Spring Boot-Rest-Curddemo-Employee-with-Spring-Data-Rest**
 <img width="956" height="201" alt="image" src="https://github.com/user-attachments/assets/f30f184a-3a09-4514-a47b-4cc5af4b77da" />
+This version of the Employee Directory demonstrates the **most simplified and automated approach** by using **Spring Data REST**. It completely removes the need to write a REST controller or service layer for basic CRUD operations.
+
+Spring Data REST automatically exposes REST endpoints for your JPA repositories, reducing code and simplifying development.
+
+---
+
+## ✅ What This Version Improves
+
+Compared to manual CRUD or Spring Data JPA controller code, Spring Data REST:
+
+* ❌ Removes the need for a REST controller
+* ❌ Removes the need for service classes
+* ✅ Automatically exposes REST endpoints from repositories
+* ✅ Provides HAL JSON output
+* ✅ Supports pagination, sorting, and links out of the box
+* ✅ Extremely fast to build prototypes and simple APIs
+
+---
+## 🔁 How Spring Data REST Works Internally
+
+```
+Client
+  ↓
+Spring Data REST (auto-generated endpoints)
+  ↓
+JPA Repository
+  ↓
+Database
+```
+
+There is **no controller** and **no service**.
+Everything is automatic.
+
+---
+## 👤 Author
+
+**Dhanush Anil Kumar**
+
+---
+### 📸 Image Credit
+
+Images used in this project are credited to **Chad Darby**.
+
+---
+
