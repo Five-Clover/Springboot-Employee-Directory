@@ -51,6 +51,22 @@ Example service responsibilities:
 ```
 Client → REST Controller → Service → DAO/Repository → Database
 ```
-
+**Spring Boot-Rest-Curddemo-Employee-with-Spring-Data-JPA**
+---
 <img width="1380" height="534" alt="image" src="https://github.com/user-attachments/assets/1cd190d0-6c02-4be3-9f78-f693f48eeafe" />
+A simplified and efficient **Employee Directory CRUD REST API** built using **Spring Boot** and **Spring Data JPA**. This version reduces boilerplate code by leveraging Spring Data JPA's built‑in repository functionalities.
+---
+
+## ✅ What This Version Improves
+
+Compared to the traditional DAO approach, this version:
+
+* Removes manual DAO implementation
+* Eliminates repetitive CRUD code
+* Uses **JpaRepository** for built‑in CRUD methods
+* Improves readability and clean architecture
+
+---
+
+
 <img width="956" height="201" alt="image" src="https://github.com/user-attachments/assets/f30f184a-3a09-4514-a47b-4cc5af4b77da" />
