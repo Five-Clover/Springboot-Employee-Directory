@@ -69,6 +69,7 @@ Compared to the traditional DAO approach, this version:
 ---
 
 **3.Spring Boot-Rest-Curddemo-Employee-with-Spring-Data-Rest**
+---
 <img width="956" height="201" alt="image" src="https://github.com/user-attachments/assets/f30f184a-3a09-4514-a47b-4cc5af4b77da" />
 This version of the Employee Directory demonstrates the **most simplified and automated approach** by using **Spring Data REST**. It completely removes the need to write a REST controller or service layer for basic CRUD operations.
 
@@ -102,6 +103,75 @@ Database
 
 There is **no controller** and **no service**.
 Everything is automatic.
+---
+**4-Spring-Boot-Spring-MVC-CRUD**
+---
+<img width="985" height="537" alt="image" src="https://github.com/user-attachments/assets/55e55e43-d23a-43ea-8a3e-55af1828b2c1" />
+# Spring Boot Spring MVC CRUD — Employee Management (Thymeleaf + MVC)
+
+This project demonstrates a **classic Spring MVC + Spring Boot CRUD application** for managing employees. Unlike REST-based versions, this one uses **server-side rendering with Thymeleaf** and traditional MVC architecture.
+
+It is an excellent project for understanding how Spring MVC works with:
+
+* Controllers
+* Services
+* DAOs/Repositories
+* Thymeleaf templates
+* Form handling
+* Model binding
+
+---
+
+## 🧱 Architecture Overview
+
+The application follows the standard MVC pattern:
+
+```
+Browser (HTML form/button)
+     ↓
+Controller (Spring MVC)
+     ↓
+Service Layer
+     ↓
+DAO / Repository
+     ↓
+Database
+```
+
+Then the Controller returns:
+
+```
+Model + View (Thymeleaf template)
+```
+
+---
+
+## 📂 Project Structure
+
+```
+spring-boot-spring-mvc-crud
+│
+├── controller       # Handles web requests and returns HTML templates
+├── service          # Business logic
+├── repository/dao   # Data access
+├── entity           # Employee entity
+└── templates        # Thymeleaf HTML pages
+```
+
+---
+
+## 🖼 UI Pages (Thymeleaf)
+
+This project contains HTML templates such as:
+
+* `list-employees.html` → Displays employee table
+* `employee-form.html` → Add/Edit employee
+
+These pages support:
+
+* Form submissions
+* Validation (optional)
+* Dynamic table rendering
 
 ---
 ## 👤 Author
